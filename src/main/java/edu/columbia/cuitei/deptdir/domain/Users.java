@@ -1,20 +1,14 @@
 package edu.columbia.cuitei.deptdir.domain;
 
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.data.annotation.Transient;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-import java.util.Set;
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.data.annotation.Transient;
 
 @Entity
 @Table(name="users")
@@ -39,7 +33,7 @@ public class Users {
         this.username = username;
     }
 
-    @Column(name="enable")
+    @Column(name="enabled")
     private boolean active;
     public boolean getActive() {
         return this.active;
