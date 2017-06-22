@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+
+    <!--
+    <include file="classpath:/db/changelog/table/level1_table.xml"/>
+    <include file="classpath:/db/changelog/data/load-level1-data.xml"/>
+    <include file="classpath:/db/changelog/table/level1_index.xml"/>
+
+    <include file="classpath:/db/changelog/table/level2_table.xml"/>
+    <include file="classpath:/db/changelog/data/load-level2-data.xml"/>
+    <include file="classpath:/db/changelog/table/level2_index.xml"/>
+
+    <include file="classpath:/db/changelog/table/level3_table.xml"/>
+    <include file="classpath:/db/changelog/data/load-level3-data.xml"/>
+    <include file="classpath:/db/changelog/table/level3_index.xml"/>
+
+    <include file="classpath:/db/changelog/table/level4_table.xml"/>
+    <include file="classpath:/db/changelog/data/load-level4-data.xml"/>
+    <include file="classpath:/db/changelog/table/level4_index.xml"/>
+
+    <include file="classpath:/db/changelog/table/users_authorities.xml"/>
+    <include file="classpath:/db/changelog/table/insert_role.xml"/>
+    -->
+    <!--
+    <include file="src/main/resources/db/changelog/table/foo_bar.xml"/>
+    -->
+
+    <include file="classpath:/db/changelog/table/foo_bar.xml"/>
+
+</databaseChangeLog>
