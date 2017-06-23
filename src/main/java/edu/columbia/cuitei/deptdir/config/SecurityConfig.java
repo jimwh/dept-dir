@@ -48,9 +48,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests()
+                /*
                 .antMatchers("/").permitAll()
                 .antMatchers("/api/deptdir/search/").permitAll()
                 .antMatchers("/api/deptdir/search/**").permitAll()
+                */
 
                 .antMatchers("/","/search","/search/**","/search.html").permitAll()
 

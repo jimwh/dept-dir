@@ -98,7 +98,7 @@ public class DeptDirController {
     @ResponseBody
     @RequestMapping(value = "/amend/loadDirectory/{name}")
     public List<Directory> loadDirectory(@PathVariable("name") String name) {
-        if(name == null) {
+        if( StringUtils.isBlank(name) ) {
             name="arts";
             log.info("reset to arts");
         }
@@ -130,7 +130,7 @@ public class DeptDirController {
     @GetMapping("/search")
     public String publicSearch(@RequestParam(value="term", required = false) final String term, final Model model) {
         log.info("hit search page with term={}", term);
-        if(term==null || "".equals(term) ) {
+        if( StringUtils.isBlank(term) ) {
             model.addAttribute("feedback", "");
         } else {
             final List<Directory> list = queryService.search("%" + term + "%");
