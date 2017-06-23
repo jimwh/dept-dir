@@ -1,4 +1,4 @@
-package edu.columbia.cuitei.deptdir.conf;
+package edu.columbia.cuitei.deptdir.config;
 
 import javax.sql.DataSource;
 import org.jasig.cas.client.validation.Saml11TicketValidator;

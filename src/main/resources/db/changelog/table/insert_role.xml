@@ -8,10 +8,14 @@
     <changeSet author="jh3389" id="insert_role">
         <sql>
             INSERT INTO users(id, username, password, enabled, first_name, last_name,email) VALUES (null, 'jh3389', 'research0', True, 'fred','gary', 'fred@gary.com');
+            INSERT INTO users(id, username, password, enabled, first_name, last_name,email) VALUES (null, 'at2582', 'research0', True,'Andrew','Thompson', 'andrew.thompson@columbia.edu');
+            INSERT INTO users(id, username, password, enabled, first_name, last_name,email) VALUES (null, 'sp363', 'research0', True,'Solomon','Prophete', 'sp363@columbia.edu');
             INSERT INTO users(id, username, password, enabled, first_name, last_name,email) VALUES (null, 'rscl1002', 'research0', True,'foo','bar', 'foo@bar.com');
 
             INSERT INTO authorities(id, username, authority) VALUES (null, 'jh3389', 'ADMIN');
-            INSERT INTO authorities(id, username, authority) VALUES (null, 'rscl1002', 'ADMIN');
+            INSERT INTO authorities(id, username, authority) VALUES (null, 'at2582', 'ADMIN');
+            INSERT INTO authorities(id, username, authority) VALUES (null, 'sp363', 'ADMIN');
+            INSERT INTO authorities(id, username, authority) VALUES (null, 'rscl1002', 'USER');
         </sql>
     </changeSet>
 

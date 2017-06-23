@@ -1,4 +1,4 @@
-package edu.columbia.cuitei.deptdir.conf;
+package edu.columbia.cuitei.deptdir.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

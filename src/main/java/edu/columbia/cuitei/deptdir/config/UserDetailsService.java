@@ -1,4 +1,4 @@
-package edu.columbia.cuitei.deptdir.conf;
+package edu.columbia.cuitei.deptdir.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

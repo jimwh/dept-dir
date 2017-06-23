@@ -25,8 +25,10 @@
     <include file="classpath:/db/changelog/table/users_authorities.xml"/>
     <include file="classpath:/db/changelog/table/insert_role.xml"/>
     -->
+
     <!--
-    <include file="src/main/resources/db/changelog/table/foo_bar.xml"/>
+        note: the path is different if using plug-in build-time to do db thing
+        <include file="src/main/resources/db/changelog/table/foo_bar.xml"/>
     -->
 
     <include file="classpath:/db/changelog/table/foo_bar.xml"/>
